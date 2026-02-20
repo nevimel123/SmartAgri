@@ -1,0 +1,18 @@
+<!-- res/drawable/card_rounded_shadow.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- shadow color -->
+            <corners android:radius="8dp" /> <!-- radius must have dp -->
+        </shape>
+    </item>
+
+    <!-- Card background layer -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- card color -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

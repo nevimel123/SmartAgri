@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ic_irrigation.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#757575"
+        android:pathData="M3,3h2v18H3V3zM19,3h2v18h-2V3zM11,21h2V3h-2v18zM7,3h2v18H7V3zM15,3h2v18h-2V3z" />
+</vector>

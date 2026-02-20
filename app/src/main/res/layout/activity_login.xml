@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/signInContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/loginpic"
+            android:contentDescription="SmartAgri Logo"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/signInTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LOGIN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textSize="14sp"
+            android:textColor="#2D2D2D"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"/>
+        <TextView
+            android:id="@+id/textregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register."
+            android:textSize="14sp"
+            android:textColor="#2D2D2D"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Register Text -->
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#2D2D2D"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

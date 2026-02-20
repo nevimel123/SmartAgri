@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_cream"
+    >
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="@string/header"
+            android:textColor="#F5A623"
+            android:textSize="36sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif" />
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="24dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- ACCOUNT SECTION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ACCOUNT"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Register Device -->
+                <RelativeLayout
+                    android:id="@+id/itemRegisterDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconRegister"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_device"
+                         />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowRegister"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconRegister"
+                        android:layout_toStartOf="@id/ivMenuArrowRegister"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Register new device"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- Profile -->
+                <RelativeLayout
+                    android:id="@+id/itemViewProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconProfile"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowProfile"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconProfile"
+                        android:layout_toStartOf="@id/ivMenuArrowProfile"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="View Profile"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- SAFETY SECTION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAFETY"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="12dp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#333333" />
+
+                <!-- Terms -->
+                <RelativeLayout
+                    android:id="@+id/itemTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconTerms"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_terms"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowTerms"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconTerms"
+                        android:layout_toStartOf="@id/ivMenuArrowTerms"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Terms and Conditions"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- Privacy -->
+                <RelativeLayout
+                    android:id="@+id/itemPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconPrivacy"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_privacy"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowPrivacy"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitlePrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconPrivacy"
+                        android:layout_toStartOf="@id/ivMenuArrowPrivacy"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Privacy Policy"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- Report -->
+                <RelativeLayout
+                    android:id="@+id/itemReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconReport"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_report"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowReport"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconReport"
+                        android:layout_toStartOf="@id/ivMenuArrowReport"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Report a Problem"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- OTHERS SECTION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OTHERS"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="12dp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#333333" />
+
+                <!-- Change Password -->
+                <RelativeLayout
+                    android:id="@+id/itemChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconChangePassword"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_password"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowChangePassword"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconChangePassword"
+                        android:layout_toStartOf="@id/ivMenuArrowChangePassword"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Change Password"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- Work Group -->
+                <RelativeLayout
+                    android:id="@+id/itemFarmGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconWorkGroup"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_farmgroup"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowWorkGroup"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleWorkGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconWorkGroup"
+                        android:layout_toStartOf="@id/ivMenuArrowWorkGroup"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Farm Group"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+                <!-- Logout -->
+                <RelativeLayout
+                    android:id="@+id/itemLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="56dp"
+                    android:background="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenuIconLogout"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_logout"
+                        app:tint="#333333" />
+
+                    <ImageView
+                        android:id="@+id/ivMenuArrowLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_right"
+                        app:tint="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/tvMenuTitleLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/ivMenuIconLogout"
+                        android:layout_toStartOf="@id/ivMenuArrowLogout"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Logout"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:alpha="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:weightSum="6">
+
+            <!-- Home -->
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="HOME"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Weather -->
+            <LinearLayout
+                android:id="@+id/navWeather"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_weather"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="WEATHER"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- SOS -->
+            <LinearLayout
+                android:id="@+id/navSOS"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_sos"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="SOS"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Irrigation -->
+            <LinearLayout
+                android:id="@+id/navIrrigation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_irrigation"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="IRRIGATION"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Notify -->
+            <LinearLayout
+                android:id="@+id/navNotify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_notification"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="NOTIFY"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Account -->
+            <LinearLayout
+                android:id="@+id/navAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_account"
+                    app:tint="@color/green_primary"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ACCOUNT"
+                    android:textColor="#4CAF50"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="orange_primary">#F7A82D</color>
+    <color name="green_primary">#4CAF50</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="pink_primary">#E91E63</color>
+
+    <!-- Background Colors -->
+    <color name="background_white">#F8F9FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink_light">#FFE4E9</color>
+    <color name="blue_light_bg">#E3F2FD</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Status Colors -->
+    <color name="green_status">#4CAF50</color>
+    <color name="divider_color">#E0E0E0</color>
+
+    <!-- Additional Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <!-- SmartAGRI App Colors -->
+    <color name="primary_orange">#F5A623</color>
+    <color name="primary_green">#4A7C59</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_gray">#AAAAAA</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="divider_gray">#E8E8E8</color>
+
+
+        <!-- Primary Colors -->
+        <color name="primary_gold">#F5B041</color>
+        <color name="primary_pink">#E91E63</color>
+
+        <!-- Background Colors -->
+        <color name="background_cream">#FFF8F0</color>
+
+        <!-- Card Colors -->
+        <color name="card_pink">#FFE5E5</color>
+        <color name="card_green">#E8F5E9</color>
+        <color name="card_light_green">#C8E6C9</color>
+        <color name="card_beige">#F5F5DC</color>
+
+        <!-- Text Colors -->
+
+        <color name="text_light_gray">#BDC3C7</color>
+
+        <!-- Status Colors -->
+        <color name="status_dry">#E74C3C</color>
+        <color name="status_optimal">#27AE60</color>
+
+        <!-- Chart Colors -->
+        <color name="chart_line">#27AE60</color>
+        <color name="chart_fill">#A8D5BA</color>
+
+        <!-- Bottom Navigation -->
+        <color name="nav_selected">#27AE60</color>
+        <color name="nav_unselected">#95A5A6</color>
+
+    <color name="primary_dark">#388E3C</color>
+    <color name="accent_orange">#F5A623</color>
+
+    <!-- Background Colors -->
+
+
+    <!-- Text Colors -->
+
+
+    <!-- Status Colors -->
+    <color name="status_red">#F44336</color>
+    <color name="status_blue">#2196F3</color>
+    <color name="status_green">#4CAF50</color>
+    <color name="status_yellow">#FFC107</color>
+    </resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/registerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- SmartAGRI Text -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="SmartAGRI"
+            android:textColor="#F5A623"
+            android:textSize="36sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif" />
+
+        <!-- REGISTER Text -->
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- First Name Input -->
+        <EditText
+            android:id="@+id/firstnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Firstname"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Last Name Input -->
+        <EditText
+            android:id="@+id/lastnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Lastname"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Address Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="8dp"
+            android:dropDownWidth="match_parent"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/regpasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Confirm Password Input -->
+        <EditText
+            android:id="@+id/confirmpasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColor="#2D2D2D"
+            android:textColorHint="#9E9E9E"
+            android:background="@drawable/edittext_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="REGISTER"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Login Text -->
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Already have an account? Login"
+            android:textColor="#2D2D2D"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
